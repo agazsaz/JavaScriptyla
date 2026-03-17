@@ -23,10 +23,21 @@
 // console.log(smartLight(20)); 
 // console.log(smartLight(15)); 
 
-const myButton = document.querySelector("button");   // нашли кнопку
-const mybox = document.querySelector(".box")      // нашли класс .box
-function sayHi(){
-    mybox.textContent = "Привет"     // написали функцию для будущего вызова
-    mybox.style.color = "green"
+// const myButton = document.querySelector("button");   // нашли кнопку
+// const mybox = document.querySelector(".box")      // нашли класс .box
+// function sayHi(){
+//     mybox.textContent = "Привет"     // написали функцию для будущего вызова
+//     mybox.style.color = "green"
+// }
+// myButton.addEventListener("click", sayHi);   // дали кнопке параметры sayHi
+
+
+const product =  {
+    nickname: 'Iphone',
+   sum: 150
 }
-myButton.addEventListener("click", sayHi);   // дали кнопке параметры sayHi
+function applyDiscount(price) {
+    price.sum = price.sum - 100;
+}
+applyDiscount(product);
+console.log(product.sum);
